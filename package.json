@@ -1,0 +1,36 @@
+{
+  "name": "herdr-dsh",
+  "version": "0.1.0",
+  "description": "Report a DeepSeek Harness TUI to Herdr as a first-class agent: idle/working/blocked state, resume, and release.",
+  "type": "module",
+  "main": "index.js",
+  "exports": "./index.js",
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE",
+    "install.sh"
+  ],
+  "keywords": [
+    "herdr",
+    "deepseek-harness",
+    "dsh",
+    "cordis",
+    "agent"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeidalqadri/herdr-dsh.git"
+  },
+  "homepage": "https://github.com/zeidalqadri/herdr-dsh#readme",
+  "bugs": {
+    "url": "https://github.com/zeidalqadri/herdr-dsh/issues"
+  },
+  "scripts": {
+    "check": "node --check index.js && node -e \"import('./index.js').then(m => { if (typeof m.apply !== 'function') process.exit(1); console.log('herdr-dsh ok') })\""
+  }
+}
